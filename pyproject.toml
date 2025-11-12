@@ -1,0 +1,25 @@
+[project]
+name = "uv-env-test"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.10.*"
+dependencies = [
+    "anemoi-datasets>=0.5.28",
+    "anemoi-graphs>=0.7.1",
+    "anemoi-inference>=0.8.1",
+    "anemoi-models>=0.9.7",
+    "anemoi-training>=0.6.7",
+    "anemoi-transform>=0.1.19",
+    "anemoi-utils>=0.4.38",
+    "flash-attn",
+    "ipykernel>=7.1.0",
+    "numpy==1.26.4",
+    "torch==2.6.0",
+    "torch-cluster>=1.6.3",
+    "torch-geometric==2.6.1",
+    "trimesh>=4.9.0",
+]
+
+[tool.uv.sources]
+flash-attn = { url = "https://github.com/Dao-AILab/flash-attention/releases/download/v2.8.3/flash_attn-2.8.3+cu12torch2.6cxx11abiFALSE-cp310-cp310-linux_x86_64.whl" }
