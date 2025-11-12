@@ -39,7 +39,7 @@ uv activate .venv
 # or
 source <repo-folder>/.venv/bin/activate
 ```
-
+#### ✨ Now start your new project inside same directory. The environment is ready to use!
 ---
 
 ## 🔧 Making changes to the environment
@@ -70,4 +70,5 @@ uv sync
 - The pyproject.toml file contains direct dependencies.
 - The uv.lock file contains resolved versions for all dependencies.
 - Do not commit local virtual environments (.venv/ or uv-envs/) to Git.
+- Make sure your working directory conatin subfolder .venv, so VScode can access it as an available environment. 
 
