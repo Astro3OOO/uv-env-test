@@ -39,6 +39,14 @@ uv activate .venv
 # or
 source <repo-folder>/.venv/bin/activate
 ```
+4. Add environmental variables:
+```bash
+# Python cell in the notebook:
+import os 
+os.environ["ANEMOI_BASE_SEED"] = <random-integer>
+# Terminal:
+export ANEMOI_BASE_SEED = <random-integer>
+```
 #### ✨ Now start your new project inside same directory. The environment is ready to use!
 ---
 
