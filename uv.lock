@@ -2692,12 +2692,22 @@ wheels = [
 
 [[package]]
 name = "torch-cluster"
-version = "1.6.3"
-source = { registry = "https://pypi.org/simple" }
+version = "1.6.3+pt26cu121"
+source = { url = "https://data.pyg.org/whl/torch-2.6.0%2Bcu121/torch_cluster-1.6.3%2Bpt26cu121-cp310-cp310-linux_x86_64.whl" }
 dependencies = [
     { name = "scipy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/54/31/e7f7a28253cd907404eb652607613b35779140b326d15d0636511b7b9438/torch_cluster-1.6.3.tar.gz", hash = "sha256:78d5a930a5bbd0d8788df8c6d66addd68d6dd292fe3edb401e3dacba26308152", size = 54550, upload-time = "2023-10-12T06:52:43.728Z" }
+wheels = [
+    { url = "https://data.pyg.org/whl/torch-2.6.0%2Bcu121/torch_cluster-1.6.3%2Bpt26cu121-cp310-cp310-linux_x86_64.whl", hash = "sha256:6f6b0f4caaa722def061d2e8bf899e51c4b59e7c6f49f90027d7196edfa04393" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "pytest", marker = "extra == 'test'" },
+    { name = "pytest-cov", marker = "extra == 'test'" },
+    { name = "scipy" },
+]
+provides-extras = ["test"]
 
 [[package]]
 name = "torch-geometric"
@@ -2917,7 +2927,7 @@ requires-dist = [
     { name = "ipykernel", specifier = ">=7.1.0" },
     { name = "numpy", specifier = "==1.26.4" },
     { name = "torch", specifier = "==2.6.0" },
-    { name = "torch-cluster", specifier = ">=1.6.3" },
+    { name = "torch-cluster", url = "https://data.pyg.org/whl/torch-2.6.0%2Bcu121/torch_cluster-1.6.3%2Bpt26cu121-cp310-cp310-linux_x86_64.whl" },
     { name = "torch-geometric", specifier = "==2.6.1" },
     { name = "trimesh", specifier = ">=4.9.0" },
 ]
