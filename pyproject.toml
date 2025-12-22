@@ -5,13 +5,6 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = "==3.10.*"
 dependencies = [
-    "anemoi-datasets>=0.5.28",
-    "anemoi-graphs>=0.7.1",
-    "anemoi-inference>=0.8.1",
-    "anemoi-models>=0.9.7",
-    "anemoi-training>=0.6.7",
-    "anemoi-transform>=0.1.19",
-    "anemoi-utils>=0.4.38",
     "flash-attn",
     "ipykernel>=7.1.0",
     "numpy==1.26.4",
